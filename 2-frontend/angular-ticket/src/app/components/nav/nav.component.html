@@ -1,0 +1,37 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened
+        fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list  class="nav-list">
+            <a mat-nav-list routerLink="eventoes">  
+                <i class="material-icons">
+                    home
+                </i>
+                Eventos
+            </a>
+            <br>
+            <a mat-nav-list routerLink="casashows">
+                <i class="material-icons">
+                    dashboard
+                </i>
+                Casa Show
+            </a>
+            <br>
+            <a mat-nav-list routerLink="compraingressoes">
+                <i class="material-icons">
+                    storefront
+                </i>
+                Compra
+            </a>
+            <br>
+            <a mat-nav-list routerLink="usuarios">
+                <i class="material-icons">
+                    favorite
+                </i>
+                Usuário
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

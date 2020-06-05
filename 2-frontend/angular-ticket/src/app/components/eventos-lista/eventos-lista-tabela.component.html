@@ -1,0 +1,27 @@
+<table class="=table">
+
+    <thead class = "thead-dark">
+        <tr>
+            <th>Evento</th>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Faixa Etária</th>
+            <th>Quantidade</th>
+                       
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempEvento of eventoes">
+            <td>{{ tempEvento.nome_evento }}</td>
+            <td>{{ tempEvento.data_evento }}</td>
+            <td>{{ tempEvento.descricao }}</td>
+            <td>{{ tempEvento.faixa_etaria }}</td>
+            <td>{{ tempEvento.qtd_estoque }}</td>
+            
+
+        </tr>
+
+    </tbody>
+</table>
+
