@@ -10,12 +10,8 @@ import { CompraingressoListaComponent } from './components/compraingresso-lista/
 import { HttpClientModule} from '@angular/common/http';
 
 import { EventoService } from './services/evento.service';
-import { CasashowService } from './services/casashow.service';
-import { CompraingressoService } from './services/compraingresso.service';
-import { UsuarioService } from './services/usuario.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { from } from 'rxjs';
 import { HeaderComponent } from './components/header/header.component';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import {FooterComponent} from './components/footer/footer.component';
@@ -25,8 +21,8 @@ import { MatListModule} from '@angular/material/list';
 import { MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { routing } from './app.routing.module';
-
-
+import { EventoInserirComponent } from './components/evento-inserir/evento-inserir.component';
+import { MatButtonModule} from '@angular/material/button'
 
 
 @NgModule({
@@ -39,7 +35,8 @@ import { routing } from './app.routing.module';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    EventoInserirComponent
   
     //EventosListaTabelaComponent
   ],
@@ -51,7 +48,8 @@ import { routing } from './app.routing.module';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    routing,
+    MatButtonModule,
+    routing
   
 
   ],

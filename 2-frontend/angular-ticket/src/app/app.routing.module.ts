@@ -10,6 +10,7 @@ import { CompraingressoListaComponent } from './components/compraingresso-lista/
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
+import { EventoInserirComponent} from './components/evento-inserir/evento-inserir.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
     {path: 'casashows' , component: CasashowListaComponent},
     {path: 'eventoes' , component: EventosListaComponent},
     {path: 'compraingressoes' , component: CompraingressoListaComponent},
+    {path: 'eventos-inserir', component:EventoInserirComponent},
 
 ];
 
